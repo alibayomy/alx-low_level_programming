@@ -12,8 +12,16 @@ int main(void)
 
 	for (n = 48; n < 58; n++)
 	{
-		putchar (n);
-		putchar (44);
+		if (n != 57)
+		{
+			putchar (n);
+			putchar (44);
+			putchar (32);
+		}
+		else
+		{
+			putchar (n);
+		}
 	}
 	putchar (10);
 	return (0);
