@@ -13,8 +13,9 @@ int main(void)
 
 	for (n = 97; n < 123; n++)
 	{
-		putchar(n"\n");
+		putchar(n);
 	}
+	putchar("\n");
 	return (0);
 }
 
