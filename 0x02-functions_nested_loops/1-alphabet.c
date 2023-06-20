@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-/*
- * main - Entery point
- *
+/**
  * print_alphabet: helper function that prints the lowercase
  *
  * Discription: print all the alphabet with new line
@@ -11,6 +9,8 @@
  */
 void print_alphabet(void)
 {
+	int i;
+
 	for (i = 97; i < 123; i++)
 	{
 		_putchar (i);
