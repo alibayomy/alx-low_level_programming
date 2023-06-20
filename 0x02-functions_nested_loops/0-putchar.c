@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <main.h>
 /**
  * main - Entery point
  *
@@ -7,6 +9,6 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	print_char("_putchar");
 	return (0);
 }
