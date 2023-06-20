@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet: helper function that prints the lowercase
- *
- * Discription: print all the alphabet with new line
- *
- * Return: always 0 (success)
+ * print_alphabet -  use _putchar function to print the lowercase
+ *			 alphabet in order
  */
 void print_alphabet(void)
 {
