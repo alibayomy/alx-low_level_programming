@@ -27,7 +27,6 @@ void times_table(void)
 			}
 			y = y + i;
 		}
-		_putchar ('$');
 		_putchar ('\n');
 	}
 }
