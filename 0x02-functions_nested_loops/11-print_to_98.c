@@ -9,19 +9,30 @@ void print_to_98(int n)
 {
 	int i;
 
-	for (i = n; i < 99; i++)
+	if (n < 99)
 	{
-		if (i > 9)
+		for (i = n; i < 99; i++)
+		{
+			if (i > 9)
+			{
+				_putchar ((i / 10) + 48);
+				_putchar ((i % 10) + 48);
+			}
+			else
+			{
+				_putchar (' ');
+				_putchar ((i % 10) + 48);
+			}
+			_putchar (',');
+			_putchar (' ');
+		}
+	}
+	else
+	{
+		for (i = n; i > 97; i--)
 		{
 			_putchar ((i / 10) + 48);
 			_putchar ((i % 10) + 48);
 		}
-		else
-		{
-			_putchar (' ');
-			_putchar ((i % 10) + 48);
-		}
-		_putchar (',');
-		_putchar (' ');
 	}
 }
