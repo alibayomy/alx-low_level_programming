@@ -34,7 +34,7 @@ void print_times_table(int n)
 					_putchar (' ');
 					_putchar (((y + i) % 10) + 48);
 				}
-				else
+				else if ((y + i) >= 100)
 				{
 					_putchar (((y + i) / 100) + 48);
 					_putchar ((((y + i) / 10) % 10) + 48);
