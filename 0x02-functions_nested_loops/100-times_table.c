@@ -31,6 +31,7 @@ void print_times_table(int n)
 				else if ((y + i) < 9)
 				{
 					_putchar (' ');
+					_putchar (' ');
 					_putchar (((y + i) % 10) + 48);
 				}
 				else
