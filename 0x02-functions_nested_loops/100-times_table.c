@@ -22,7 +22,7 @@ void print_times_table(int n)
 			{
 				_putchar (',');
 				_putchar (' ');
-				if ((y + i) < 99 && ((y + i) > 9))
+				if ((y + i) < 100 && ((y + i) > 9))
 				{
 					_putchar(' ');
 				_putchar (((y + i) / 10) + 48);
