@@ -10,13 +10,14 @@
 int main(void)
 {
 	int f = 1, s = 2, sum, i;
-	
+
+	printf("%d, %d, ", f, s)
 	for (i = 1 ; i < 51; i++)
 	{
-		sum = x + y;
-		printf ("%d, ", sum);
-		y = sum;
-		x = y;
+		sum = f + s;
+		printf("%d, ", sum);
+		s = sum;
+		f = y;
 	}
 	return (0);
 }
