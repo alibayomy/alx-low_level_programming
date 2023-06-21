@@ -17,7 +17,7 @@ int main(void)
 		sum = f + s;
 		printf("%d, ", sum);
 		s = sum;
-		f = y;
+		f = s;
 	}
 	return (0);
 }
