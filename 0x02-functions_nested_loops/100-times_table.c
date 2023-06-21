@@ -31,6 +31,7 @@ void print_times_table(int n)
 				else
 				{
 					_putchar (' ');
+					_putchar (' ');
 					_putchar (((y + i) % 10) + 48);
 				}
 				y = y + i;
