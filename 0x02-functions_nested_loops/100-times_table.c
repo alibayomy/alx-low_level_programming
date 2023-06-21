@@ -11,7 +11,6 @@ void print_times_table(int n)
 
 	if (n > 15 || n < 0)
 	{
-		putchar('$');
 	}
 	else
 	{
@@ -40,8 +39,8 @@ void print_times_table(int n)
 					_putchar ((((y + i) / 10) % 10) + 48);
 				y = y + i;
 				}
-			_putchar ('\n');
 			}
+			_putchar('\n');
 		}
 
 	}
