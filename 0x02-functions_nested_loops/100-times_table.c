@@ -38,8 +38,8 @@ void print_times_table(int n)
 				{
 					_putchar (((y + i) / 100) + 48);
 					_putchar ((((y + i) / 10) % 10) + 48);
-				y = y + i;
 				}
+				y = y + 1;
 			}
 			_putchar('\n');
 		}
