@@ -12,7 +12,7 @@ int main(void)
 {
 	int i = 0;
 
-	int sum = 0;
+	int sum;
 
 	while (i < 1024)
 	{
@@ -21,7 +21,7 @@ int main(void)
 			sum = sum + i;
 			i++;
 		}
-		printf("%d", sum);
 	}
+	printf("%d", sum);
 	return (0);
 }
