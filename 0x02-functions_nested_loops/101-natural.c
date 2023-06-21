@@ -10,18 +10,16 @@
  */
 int main(void)
 {
-	int i = 0;
-
 	int sum;
 
-	while (i < 1024)
+	for (i = 0; i < 1024; i++)
 	{
 		if (((i % 3) == 0) || (i % 5) == 0)
 		{
-			sum = sum + i;
+			sum = i;
 			i++;
 		}
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
 	return (0);
 }
