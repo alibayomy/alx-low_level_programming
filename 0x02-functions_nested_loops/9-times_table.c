@@ -22,6 +22,7 @@ void times_table(void)
 			}
 			else
 			{
+				_putchar (' ');
 				_putchar (((y + i) % 10) + 48);
 			}
 			y = y + i;
