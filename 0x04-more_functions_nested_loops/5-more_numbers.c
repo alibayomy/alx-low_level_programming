@@ -1,26 +1,22 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * more_numbers - print the numbers from 0 to 14, 10 times
+ * more_numbers - print more numbers
  */
+
 void more_numbers(void)
 {
-	int i, x;
+	int i, j;
 
-	for (i = 0; i < 10; i++)
+	for (i = 1; i <= 10; i++)
 	{
-		for (x = 0; x < 15; x++)
+		for (j = 0; j <= 14; j++)
 		{
-			if (x < 10)
-			{
-				_putchar (x + 48);
-			}
-			else
-			{
-				_putchar ('1');
-				_putchar ((x % 10) + 48);
-			}
+			if (j >= 10)
+				_putchar('1');
+			_putchar (j % 10 + '0');
 		}
 		_putchar('\n');
 	}
 }
+
