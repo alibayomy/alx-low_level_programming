@@ -10,7 +10,7 @@
 int main(void)
 {
 	unsigned long f = 1, s = 2, sum;
-       
+
 	int i;
 
 	printf("%lu, %lu, ", f, s);
@@ -20,6 +20,10 @@ int main(void)
 		printf("%lu, ", sum);
 		f = s;
 		s = sum;
+		if (i == 49)
+		{
+			printf('\n');
+		}
 	}
 	return (0);
 }
