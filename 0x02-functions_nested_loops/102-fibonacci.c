@@ -16,8 +16,8 @@ int main(void)
 	{
 		sum = f + s;
 		printf("%d, ", sum);
-		s = sum;
 		f = s;
+		s = sum;
 	}
 	return (0);
 }
