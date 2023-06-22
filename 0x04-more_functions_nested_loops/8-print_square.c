@@ -1,33 +1,25 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_sqaure - print a square using the (#) sign
- *
- * @size: argument represents how many (#) to print the given
- *	square
+ * print_square - prints a square, followed by a new line;
+ * @size: size of the square
  */
 void print_square(int size)
 {
 	if (size <= 0)
 	{
-		_putchar ('\n');
-	}
-	else
+		_putchar('\n');
+	} else
 	{
-		int i, x, y;
+		int i, j;
 
-		for (i = 1; i <= size / 2; i++)
+		for (i = 0; i < size; i++)
 		{
-			for (y = 1; y <= size; y++)
+			for (j = 0; j < size; j++)
 			{
-				_putchar ('#');
-				_putchar ('\n');
+				_putchar('#');
 			}
-			for (x = 1; x <= size; x++)
-			{
-				_putchar ('#');
-			}
-			_putchar ('\n');
-			}
+			_putchar('\n');
+		}
 	}
 }
