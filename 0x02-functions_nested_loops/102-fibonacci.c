@@ -14,15 +14,19 @@ int main(void)
 	int i;
 
 	printf("%lu, %lu, ", f, s);
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 48; i++)
 	{
 		sum = f + s;
-		printf("%lu, ", sum);
+		printf("%lu", sum);
 		f = s;
 		s = sum;
-		if (i == 49)
+		if (i == 47)
 		{
 			printf("\n");
+		}
+		else
+		{
+			printf(", ");
 		}
 	}
 	return (0);
