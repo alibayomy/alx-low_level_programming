@@ -9,7 +9,14 @@ void print_numbers(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		_putchar (i + 48);
-		_putchar ('\n');
+		if (i > 9)
+		{
+			_putchar (i + 48);
+			_putchar ('\n');
+		}
+		else
+		{
+			_putchar (i + 48);
+		}
 	}
 }
