@@ -13,11 +13,11 @@ int main(void)
        
 	int i;
 
-	printf("%d, %d, ", f, s);
+	printf("%lu, %lu, ", f, s);
 	for (i = 1 ; i < 51; i++)
 	{
 		sum = f + s;
-		printf("%d, ", sum);
+		printf("%lu, ", sum);
 		f = s;
 		s = sum;
 	}
