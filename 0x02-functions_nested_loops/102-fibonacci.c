@@ -9,7 +9,9 @@
  */
 int main(void)
 {
-	int f = 1, s = 2, sum, i;
+	unsigned long f = 1, s = 2, sum;
+       
+	int i;
 
 	printf("%d, %d, ", f, s);
 	for (i = 1 ; i < 51; i++)
