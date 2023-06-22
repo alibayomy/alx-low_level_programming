@@ -22,7 +22,7 @@ int main(void)
 		s = sum;
 		if (i == 49)
 		{
-			printf('\n');
+			printf("\n");
 		}
 	}
 	return (0);
