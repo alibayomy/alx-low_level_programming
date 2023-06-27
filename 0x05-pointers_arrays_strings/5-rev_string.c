@@ -16,6 +16,6 @@ void rev_string(char *s)
 	for (j = i; j >= 0; j--)
 	{
 		clean_str = s[j];
-
+		s[j] = clean_str;
 	}
 }
