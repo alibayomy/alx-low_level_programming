@@ -9,13 +9,13 @@
 void rev_string(char *s)
 {
 	int i, j;
-
-	char clean;
+	char clean_str;
 
 	for (i = 0; s[i] != '\0'; i++)
 		;
 	for (j = i; j >= 0; j--)
 	{
-		clean = s[j];
+		clean_str = s[j];
+
 	}
 }
