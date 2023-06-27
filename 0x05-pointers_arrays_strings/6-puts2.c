@@ -8,9 +8,9 @@
  */
 void puts2(char *str)
 {
-	long unsigned  i;
+	unsigned  int i;
 
-	for (i = 0 ; i <= (strlen(str)); i++)
+	for (i = 0 ; i <= (strlen(str)) - 1; i++)
 	{
 		if (i % 2 == 0)
 		{
