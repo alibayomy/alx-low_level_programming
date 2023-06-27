@@ -8,5 +8,16 @@
  */
 void rev_string(char *s)
 {
-	print_rev(s);
+	int i, j;
+	
+	char clean_str;
+
+	for (i = 0; i <= (strlen(s)); i++)
+	{
+		if (s[i] != '\0')
+		{
+			clean_str[i] = str[i];
+		}
+	}
+	printf (clean_str);
 }
