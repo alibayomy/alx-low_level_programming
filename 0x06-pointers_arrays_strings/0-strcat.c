@@ -12,7 +12,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char full = strcat(dest, src);
+	char *full = strcat(dest, src);
 
 	return (full);
 }
