@@ -10,16 +10,21 @@
  */
 char *cap_string(char *c)
 {
-	int i;
+	int i, j;
+
+	char sep[] = ",;.!()?{}\n\t\" ";
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		if (c[i] == ' ' || '\n' || ',' || ';' ||
-				'.' || '!' || '?' || '"'
-				|| '(' || ')' || '{' ||
-				'}')
+		for (j = 0; sep[j] != '\0'; j++)
 		{
-			string_toupper(c[i + 1]);
+			if (c[i] == sep[j])
+			{
+				if (c[i + 1] > 96 && c[i + 1] < 123)
+				{
+					c[i + 1] -= 32;
+				}
+			}
 		}
 	}
 	return (c);
