@@ -29,6 +29,6 @@ int get_square(int n, int i)
 	}
 	else
 	{
-		get_square(n, i + 1);
+		return (get_square(n, i + 1));
 	}
 }
