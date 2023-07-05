@@ -8,7 +8,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	get_square(n, 1);
+	return(get_square(n, 1));
 }
 /**
  * get_square - helper fun get the sqaure of n
