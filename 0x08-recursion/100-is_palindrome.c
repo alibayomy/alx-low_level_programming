@@ -10,6 +10,7 @@ int is_palindrome(char *s)
 	int n = _strlen_recursion(s);
 
 	return (is_palindrome_helper(s, n, 1));
+}
 /**
  * is_palindrome_helper - helper function to check
  *	each letter to its oppsite
