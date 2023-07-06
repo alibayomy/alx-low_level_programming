@@ -25,6 +25,8 @@ int is_palindrome_helper(char *s, int n, int i)
 		return (1);
 	if (s[0] != s[n - i])
 		return (0);
-	if (s[0] == s[n - i] && return (is_palindrome_helper(s + 1, n, i + 2)))
+	if (s[0] == s[n - i] && is_palindrome_helper(s + 1, n, i + 2))
 		return (1);
+	else
+		return (0);
 }
