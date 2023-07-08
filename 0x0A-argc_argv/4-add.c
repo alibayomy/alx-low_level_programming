@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
 	if (argc == 2 || argc == 1)
 	{
 		printf("%d\n", 0);
-		return (0);
 	}
 	for (i = 1; i < argc; i++)
 	{
