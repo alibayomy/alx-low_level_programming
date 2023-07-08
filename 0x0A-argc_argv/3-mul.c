@@ -5,7 +5,7 @@
  * main - entery point, that multiplies two numbers..
  * @argc: counts the arguments passed  to the program
  * @argv: an array of the arguments passed
- * Return: always (0)
+ * Return:  (0) if success else 1
  */
 int main(int argc, char *argv[])
 {
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		printf("Error\n");
-		return (0);
+		return (1);
 	}
 	for (i = 1; i < argc; i++)
 	{
