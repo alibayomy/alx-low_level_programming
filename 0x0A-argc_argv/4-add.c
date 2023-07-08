@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - entery point, that adds postive numbers.
  * @argc: counts the arguments passed  to the program
@@ -20,12 +21,15 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) == 0)
+		if (isdigit (argv[i]))
+		{
+			sum += atoi(argv[i]);
+		}
+		else
 		{
 			printf("Error\n");
 			return (1);
 		}
-		sum +=  atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
