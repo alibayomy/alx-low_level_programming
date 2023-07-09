@@ -22,7 +22,7 @@ int helper(int n)
 		return (1 + helper(n - 10));
 	if (n >= 25)
 	{
-		return (1 + helper(n - 25));
+		return (n / 25 + helper(n % 25));
 	}
 	else
 	{
