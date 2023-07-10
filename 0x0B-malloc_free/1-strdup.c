@@ -9,12 +9,12 @@
  */
 char *_strdup(char *str)
 {
-	if (str == NULL)
-		return (NULL);
 	char *str_cpy;
 
 	int i, size = 0;
 
+	if (str == NULL)
+		return (NULL);
 	while (str[size] != '\0')
 	{
 		size++;
