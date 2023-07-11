@@ -27,6 +27,5 @@ int **alloc_grid(int width, int height)
 			array[i][y] = 0;
 		}
 	}
-	free_grid(alloc_grid(width, height), height);
 	return (array);
 }
