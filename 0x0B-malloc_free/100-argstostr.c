@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * argstostr - concatenates all the argument of a program
- * @c: number of programs
+ * @ac: number of programs
  * @av: array of the program agruments
  * Return: a poitner to a new string, NULL if faild
  */
@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 			sum = sum + 1;
 		}
 	}
-	final_string = malloc((sizeof(char) * sum ) + ac);
+	final_string = malloc((sizeof(char) * sum) + (ac + 1);
 	if (final_string == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
