@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "4-free_grid.c"
 #include "main.h"
 /**
  * alloc_grid - making a two dimensional array
@@ -26,5 +27,6 @@ int **alloc_grid(int width, int height)
 			array[i][y] = 0;
 		}
 	}
+	free_grid(alloc_grid(width, height), height);
 	return (array);
 }
