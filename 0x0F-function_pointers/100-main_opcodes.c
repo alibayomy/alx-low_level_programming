@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "function_pointers.h"
 /**
  * main - entery point
@@ -6,7 +7,7 @@
  * @argv: array of the arguments
  * Return: always 0
  */
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
 	int bytes;
 
