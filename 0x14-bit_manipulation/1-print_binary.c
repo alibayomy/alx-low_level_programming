@@ -1,31 +1,28 @@
 #include "main.h"
-#include "0-binary_to_uint.c"
 /**
  * print_binary -  prints the binary representation of a number.
  * @n: the given number
  */
 void print_binary(unsigned long int n)
 {
-	int i, len = 0;
-	unsigned long int num = n;
-	unsigned long int get_len = n;
+	int i, zeros = 0;
+	unsigned long int get_len;
 
-	while (get_len != 0)
+	
+	for (i = 63; i >= 0; i--)
 	{
-		len++;
-		get_len = get_len >> 1;
-	}
-	len = len - 1;
-	for (i = len; num > 0; i--)
-	{
-		if (num & (power(i) > 0))
+		get_len = n >> i;
+		if ((get_len &  1) > 0)
 		{
+			zeros++;
 			_putchar('1');
 		}
 		else
-			_putchar('0');
-		num = num >> 1;
+		{
+			if (zeros)
+				_putchar('0');
+		}
 	}
-	if (n == 0)
+	if (zeros == 0)
 		_putchar('0');
 }
