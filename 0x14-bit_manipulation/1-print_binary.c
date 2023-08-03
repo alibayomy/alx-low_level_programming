@@ -8,7 +8,7 @@ void print_binary(unsigned long int n)
 	int i, zeros = 0;
 	unsigned long int get_len;
 
-	
+
 	for (i = 63; i >= 0; i--)
 	{
 		get_len = n >> i;
