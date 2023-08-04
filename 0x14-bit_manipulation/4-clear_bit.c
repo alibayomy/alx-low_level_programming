@@ -13,10 +13,12 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	if (index > 63)
 		return (-1);
-	if (num >= pw)
+	if ((num >> index) & 1)
 	{
-		*n = num - pw;
-		return (1);
+		if (num >= pw)
+		{
+			*n = num - pw;
+			return (1);
 	}
 	else
 		*n = num;
