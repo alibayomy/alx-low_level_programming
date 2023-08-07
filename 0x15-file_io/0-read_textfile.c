@@ -10,10 +10,10 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	size_t fp;
+	ssize_t fp;
 	char *buffer;
-	size_t n;
-	size_t wr;
+	ssize_t n;
+	ssize_t wr;
 
 	fp = open(filename, O_RDONLY);
 	if (fp == -1)
