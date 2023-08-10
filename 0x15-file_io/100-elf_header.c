@@ -9,11 +9,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int o;
+	int f;
 	(void) argc;
 
-	o = open(argv[1], O_RDONLY);
-	if (o == -1)
+	f = open(argv[1], O_RDONLY);
+	if (f == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read the file%s\n", argv[1]);
 		exit(98);
