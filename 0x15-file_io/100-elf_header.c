@@ -10,6 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int o;
+	(void) argc;
 
 	o = open(argv[1], O_RDONLY);
 	if (o == -1)
