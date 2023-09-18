@@ -1,3 +1,3 @@
 #!/bin/bash
 
-export LD_PRELOAD= /tmp/libgiga.so
+export LD_PRELOAD=
