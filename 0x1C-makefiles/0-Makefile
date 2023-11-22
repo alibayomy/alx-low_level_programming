@@ -7,4 +7,4 @@ school.o: school.c
 main.c:
 	echo"int main(void) {print_school(); return (EXIT_SUCCESS); }" > main.c
 clean:
-	rm *.o school
+	rm -f *.o school
