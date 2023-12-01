@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Solivng the island parimeter problem"""
 def island_perimeter(grid): 
     """getting the parameter of the given grid:
         grid is a list of list of integers:
