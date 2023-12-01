@@ -89,6 +89,7 @@ def island_perimeter(grid):
                             param += 1
                     # # check the last element
                     elif(index == len(grid[i]) - 1):
+                        param += 1
                         if(grid[i][index - 1] == 0):
                             param += 1
                         if(grid[i-1][index] == 0):
