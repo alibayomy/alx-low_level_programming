@@ -15,6 +15,7 @@ def island_perimeter(grid):
     param = 0
     for lst in grid:
         num = num + 1
+
     # i have 16 case can happen
     i = 0
     while (i < num):
@@ -30,7 +31,7 @@ def island_perimeter(grid):
                         # check the water beside
                         if (grid[i+1][index]) == 0:
                             param += 1
-                    # check the right edge case
+                    # check the right edge case--------------
                     elif(index == (len(grid[i]) - 1)):
                         param = param + 2
                         # check the water underneath
@@ -39,8 +40,9 @@ def island_perimeter(grid):
                         # check the water beside
                         if(grid[i+1][index]) == 0:
                             param += 1
-                    # check top row case
+                    # check top row case---------------
                     else:
+                        param += 1
                         if(grid[i][index + 1]) == 0:
                             param += 1
                         if(grid[i][index - 1]) == 0:
@@ -84,7 +86,8 @@ def island_perimeter(grid):
                             param += 1
                         if(grid[i+1][index] == 0):
                             param += 1
-                    elif(index == num - 1):
+                    # # check the last element
+                    elif(index == len(grid[i]) - 1):
                         if(grid[i][index - 1] == 0):
                             param += 1
                         if(grid[i-1][index] == 0):
