@@ -70,6 +70,7 @@ def island_perimeter(grid):
                             param += 1
                     # check bottom row case
                     else:
+                        param += 1
                         if(grid[i][index + 1]) == 0:
                             param += 1
                         if(grid[i][index - 1]) == 0:
