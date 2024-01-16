@@ -13,6 +13,8 @@ int linear_search(int *array, size_t size, int value)
 	int i;
 	int mysize;
 
+	if (array == NULL)
+		return (-1);
 	mysize = size;
 	for (i = 0; i < mysize; i++)
 	{
