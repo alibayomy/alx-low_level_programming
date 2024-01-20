@@ -21,10 +21,10 @@ int myBinary_search(int *array, int left, int right, int value)
 	{
 		if (i == right)
 		{
-			printf("%d\n", i);
+			printf("%d\n", array[i]);
 			break;
 		}
-		printf("%d, ", i);
+		printf("%d, ", array[i]);
 	}
 	if (value == array[mid])
 	{
