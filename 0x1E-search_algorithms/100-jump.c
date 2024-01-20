@@ -4,7 +4,7 @@
 
 
 /**
- * jump_search -- a function that searches for a value in a sorted array of
+ * jump_search - a function that searches for a value in a sorted array of
  * integers using the Jump search algorithm
  * @array: the given array to search on
  * @size: the size of the array
