@@ -1,32 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * left_search - search for a val in  the left tree of an
+ * myBinary_search - search for a val in  the left tree of an
  * array using binary search
  * @array: the given arary to search on
- * @size: the size of the array
+ * @left: the my left index of the array
+ * @right: my right and max index of the array
  * @value: the value of the number
  * Return: the value when found , else -1
 */
-int left_search(int *array, size_t size, int value)
+int myBinary_search(int *array, int left, int right, int value)
 {
-	size_t mid;
+	int mid, i;
 
-	if (size == 1)
+	if (left > right)
+		return (-1);
+
+	mid = left + (right - 1) / 2;
+	printf("Searching in array: ");
+	for (i = left; i <= right ; i++)
 	{
-		if (value == array[0])
-			return (value);
+		if (i == right)
+		{
+			printf("%d\n", i);
+			break;
+		}
+		printf("%d, ", i);
 	}
-	mid = size / 2;
 	if (value == array[mid])
 	{
 		return (mid);
 	}
 	else if (value < array[mid])
 	{
-		left_search(array, mid / 2, value);
+		return (myBinary_search(array, left, mid - 1, value));
 	}
+	else
+		return (myBinary_search(array, mid + 1, right, value));
 
 	return (-1);
 }
@@ -43,30 +53,10 @@ int left_search(int *array, size_t size, int value)
 int binary_search(int *array, size_t size, int value)
 {
 	int mySize;
-	int index;
 
+	mySize = size;
 	if (array == NULL)
 		return (-1);
-	if (size == 1)
-	{
-		if (value == array[0])
-		{
-			return (value);
-		}
-		else
-			return (-1);
-	}
-	mySize = size / 2;
-	if (value == array[mySize])
-	{
-		return (value);
-	}
-	else if (value > array[mySize])
-	{
-		index = left_search(array, size / 2, value);
-	}
-	else
-		index = left_search(array, size / 2, value);
-	return (index);
+	return (myBinary_search(array, 0, mySize - 1, value));
 
 }
