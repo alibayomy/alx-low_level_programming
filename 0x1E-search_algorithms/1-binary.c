@@ -15,8 +15,7 @@ int myBinary_search(int *array, int left, int right, int value)
 
 	if (left > right)
 		return (-1);
-
-	mid = left + (right - 1) / 2;
+	mid = left + (right - left) / 2;
 	printf("Searching in array: ");
 	for (i = left; i <= right ; i++)
 	{
@@ -38,7 +37,6 @@ int myBinary_search(int *array, int left, int right, int value)
 	else
 		return (myBinary_search(array, mid + 1, right, value));
 
-	return (-1);
 }
 
 
