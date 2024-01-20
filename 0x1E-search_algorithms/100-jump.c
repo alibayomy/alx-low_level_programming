@@ -9,6 +9,7 @@
  * @array: the given array to search on
  * @size: the size of the array
  * @value: the value to search for
+ * Return: the index of the value, -1 if else
 */
 int jump_search(int *array, size_t size, int value)
 {
